@@ -1,0 +1,135 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+}
+
+.errorSummary {
+  padding: var(--space-4);
+  background-color: var(--paper-50);
+  border-left: 2px solid var(--green-900);
+  border-radius: var(--radius-image);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.errorSummaryHeading {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--green-900);
+}
+
+.errorSummaryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.errorSummaryLink {
+  font-size: var(--text-small);
+  color: var(--charcoal-800);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.fieldRowDates,
+.fieldRowGuests {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.fieldRowGuests {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 480px) {
+  .fieldRowDates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.label {
+  font-size: var(--text-small);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--charcoal-800);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.625rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--charcoal-800);
+  background-color: var(--paper-50);
+  border: none;
+  border-bottom: 1px solid var(--sand-400);
+  border-radius: var(--radius-image);
+  transition: border-color var(--dur-2) var(--ease-out);
+}
+
+.input:focus,
+.textarea:focus {
+  border-bottom-color: var(--green-900);
+}
+
+.input[aria-invalid="true"],
+.textarea[aria-invalid="true"] {
+  border-bottom-color: var(--green-900);
+}
+
+.textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.fieldError {
+  font-size: var(--text-small);
+  line-height: 1.4;
+  color: var(--green-900);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.statusBox {
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--paper-50);
+  border-left: 2px solid var(--green-900);
+  border-radius: var(--radius-image);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-small);
+  color: var(--charcoal-800);
+}
+
+.statusLink {
+  font-weight: 500;
+  color: var(--green-900);
+}
+
+.unverifiedNote {
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--charcoal-800);
+  opacity: 0.78;
+}

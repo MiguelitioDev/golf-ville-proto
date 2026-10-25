@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--green-900);
+  color: var(--paper-50);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.brandColumn {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--paper-50);
+  white-space: nowrap;
+}
+
+.wordmarkPrimary {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1;
+  font-variation-settings: "opsz" 32;
+}
+
+.wordmarkSecondary {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.notice {
+  color: var(--paper-50);
+  opacity: 0.9;
+}
+
+.contactColumn {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.contactHeading {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--brass-300);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.contactLink {
+  font-size: var(--text-body);
+  color: var(--paper-50);
+}
+
+.contactLink:hover {
+  color: var(--brass-300);
+}
+
+.addressLine {
+  font-size: var(--text-small);
+  color: var(--paper-50);
+  opacity: 0.85;
+}
+
+.unverifiedNote {
+  font-size: var(--text-small);
+  color: var(--paper-50);
+  opacity: 0.78;
+}
+
+.bottomBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--green-700);
+}
+
+.rightsNotice {
+  font-size: var(--text-small);
+  color: var(--paper-50);
+  opacity: 0.75;
+}
+
+.conceptTag {
+  font-size: var(--text-xs);
+  line-height: 1.3;
+  color: var(--brass-300);
+}
+
+@media (min-width: 1024px) {
+  .topGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+
+  .brandColumn {
+    grid-column: 1 / span 6;
+  }
+
+  .contactColumn {
+    grid-column: 8 / span 5;
+  }
+}

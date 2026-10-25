@@ -1,0 +1,85 @@
+{
+  "aerial-pools-golf": {
+    "width": 1024,
+    "height": 576,
+    "placeholderColor": "#7c8483",
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "basePath": "/images/pending/aerial-pools-golf"
+  },
+  "boardwalk-pergolas": {
+    "width": 598,
+    "height": 399,
+    "placeholderColor": "#9b977a",
+    "widths": [
+      480,
+      598
+    ],
+    "basePath": "/images/pending/boardwalk-pergolas"
+  },
+  "entrance-golf-ball": {
+    "width": 500,
+    "height": 375,
+    "placeholderColor": "#81888d",
+    "widths": [
+      480,
+      500
+    ],
+    "basePath": "/images/pending/entrance-golf-ball"
+  },
+  "lake-kayak": {
+    "width": 492,
+    "height": 657,
+    "placeholderColor": "#75737e",
+    "widths": [
+      480,
+      492
+    ],
+    "basePath": "/images/pending/lake-kayak"
+  },
+  "pool-palms-wide": {
+    "width": 1024,
+    "height": 580,
+    "placeholderColor": "#677d7f",
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "basePath": "/images/pending/pool-palms-wide"
+  },
+  "pools-beach-aerial": {
+    "width": 646,
+    "height": 657,
+    "placeholderColor": "#98a38f",
+    "widths": [
+      480,
+      646
+    ],
+    "basePath": "/images/pending/pools-beach-aerial"
+  },
+  "pools-golf-view": {
+    "width": 664,
+    "height": 657,
+    "placeholderColor": "#6c8891",
+    "widths": [
+      480,
+      664
+    ],
+    "basePath": "/images/pending/pools-golf-view"
+  },
+  "unit-interior-living": {
+    "width": 1200,
+    "height": 800,
+    "placeholderColor": "#595043",
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "basePath": "/images/pending/unit-interior-living"
+  }
+}

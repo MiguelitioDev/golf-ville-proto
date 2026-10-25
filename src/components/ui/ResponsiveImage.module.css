@@ -1,0 +1,28 @@
+.wrapper {
+  display: block;
+  width: 100%;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-image);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-image);
+  filter: saturate(0.96);
+}
+
+.credit {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: inherit;
+  opacity: 0.75;
+}

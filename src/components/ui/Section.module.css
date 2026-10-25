@@ -1,0 +1,18 @@
+.section {
+  padding-block: clamp(4rem, 9vw, 9rem);
+}
+
+.paper {
+  background-color: var(--paper-50);
+  color: var(--charcoal-800);
+}
+
+.sand {
+  background-color: var(--sand-200);
+  color: var(--charcoal-800);
+}
+
+.green {
+  background-color: var(--green-900);
+  color: var(--paper-50);
+}

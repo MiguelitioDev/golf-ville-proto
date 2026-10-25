@@ -1,0 +1,107 @@
+.hero {
+  background-color: var(--green-900);
+  color: var(--paper-50);
+  padding-top: calc(var(--header-h) + 1.5rem);
+  padding-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.atlasColumn {
+  min-width: 0;
+  order: -1;
+  width: 100%;
+}
+
+.textColumn {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: var(--space-5);
+}
+
+.title {
+  font-size: clamp(2.75rem, 4vw + 0.6rem, 4.5rem);
+  max-width: 14ch;
+  color: var(--paper-50);
+}
+
+.lede {
+  color: var(--paper-50);
+  opacity: 0.9;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.hero[data-ready="false"] .title,
+.hero[data-ready="false"] .lede,
+.hero[data-ready="false"] .actions {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.hero[data-ready="true"] .title {
+  animation: rise-in var(--dur-3) var(--ease-out) both;
+  animation-delay: calc(var(--dur-4) * 0.6);
+}
+
+.hero[data-ready="true"] .lede {
+  animation: rise-in var(--dur-3) var(--ease-out) both;
+  animation-delay: calc(var(--dur-4) * 0.6 + 80ms);
+}
+
+.hero[data-ready="true"] .actions {
+  animation: rise-in var(--dur-3) var(--ease-out) both;
+  animation-delay: calc(var(--dur-4) * 0.6 + 160ms);
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    display: flex;
+    align-items: stretch;
+    min-height: min(100svh, 920px);
+    padding-top: calc(var(--header-h) + 3rem);
+  }
+
+  .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-6);
+    align-items: end;
+  }
+
+  .textColumn {
+    grid-column: 1 / span 5;
+    align-self: end;
+  }
+
+  .atlasColumn {
+    order: 0;
+    grid-column: 6 / span 7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero[data-ready="false"] .title,
+  .hero[data-ready="false"] .lede,
+  .hero[data-ready="false"] .actions,
+  .hero[data-ready="true"] .title,
+  .hero[data-ready="true"] .lede,
+  .hero[data-ready="true"] .actions {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
